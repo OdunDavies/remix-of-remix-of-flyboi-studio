@@ -1,0 +1,22 @@
+# Netlify deployment configuration for FLYBOI INC
+# TanStack Start outputs a static client bundle into .output/public.
+# On Netlify we publish that directory and let the client router resolve routes.
+
+[build]
+  command = "bun run build"
+  publish = ".output/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback — any unmatched request falls through to index.html so the
+# TanStack Router can resolve the route on the client side.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
