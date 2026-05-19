@@ -2,10 +2,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 
 const videos = [
-  { id: "Im_VleEWPDQ", title: "Twe Twe" },
-  { id: "Y3DLPYBSpYE", title: "Buga (Lo Lo Lo) ft. Tekno" },
-  { id: "qFLpRG9P6Yo", title: "Cough (Odo) ft. Becky G" },
-  { id: "rk7Ept6dLeI", title: "Lie" },
+  { id: "zBtxPFAJZOU", title: "Eyo (Lyric Video)" },
+  { id: "lfdlYBxd96c", title: "4DAYZ" },
+  { id: "041PlAGNMsQ", title: "Twe Twe ft. Davido" },
+  { id: "s1NPXKoTGy0", title: "Shu-Peru" },
 ];
 
 function VideoCard({ id, title }: { id: string; title: string }) {
