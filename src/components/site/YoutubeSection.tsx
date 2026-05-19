@@ -3,9 +3,9 @@ import { useRef, useState } from "react";
 
 const videos = [
   { id: "zBtxPFAJZOU", title: "Eyo (Lyric Video)" },
-  { id: "9HnSQVpK8AU", title: "Uncle K" },
+  { id: "9HnSQVpK8AU", title: "Police ft. Angelique Kidjo & Johnny Drille" },
   { id: "041PlAGNMsQ", title: "Twe Twe ft. Davido" },
-  { id: "bLF90M96m2Q", title: "To Be A Man" },
+  { id: "bLF90M96m2Q", title: "Buga ft. Tekno" },
 ];
 
 function VideoCard({ id, title }: { id: string; title: string }) {
